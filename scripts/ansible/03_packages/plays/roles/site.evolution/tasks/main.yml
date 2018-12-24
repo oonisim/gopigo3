@@ -1,0 +1,9 @@
+#--------------------------------------------------------------------------------
+# Connection to MS exchange/office365
+#--------------------------------------------------------------------------------
+- include_vars:  "{{ ansible_distribution }}.yml"
+- name: Install evolution
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ evolution_packages }}"

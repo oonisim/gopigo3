@@ -1,0 +1,15 @@
+---
+# tasks file for site.cntlm
+- include_vars:  "{{ ansible_distribution }}.yml"
+- include_tasks: "{{ ansible_distribution }}.yml"
+
+- name: "Place {{ cntlm_conf }}"
+  template:
+    src:    "{{ role_path }}/templates/{{ cntlm_conf_template }}"
+    dest:   "{{ cntlm_conf }}"
+    mode:   0640
+
+- name: "Restart {{ cntlm_service }}"
+  service:
+    name: "{{ cntlm_service }}"
+    state: restarted

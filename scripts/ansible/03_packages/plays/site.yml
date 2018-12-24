@@ -1,0 +1,62 @@
+---
+- name: package installations
+  hosts: environment
+  any_errors_fatal: true
+  become: yes
+  roles:
+  - role: site.common
+  - role: site.java
+  - role: site.sbt
+  - role: site.awscli
+  - role: site.ansible
+  - role: site.terraform
+  - role: site.postman
+  - role: site.docker
+  - role: site.tor
+  #--------------------------------------------------------------------------------
+  # IDEA (https://galaxy.ansible.com/gantsign/intellij)
+  #--------------------------------------------------------------------------------
+  - role: gantsign.intellij
+  #--------------------------------------------------------------------------------
+  # Chrome (https://galaxy.ansible.com/cmprescott/chrome)
+  #--------------------------------------------------------------------------------
+  - role: cmprescott.chrome
+  #--------------------------------------------------------------------------------
+  # VMWare workstation
+  #--------------------------------------------------------------------------------
+  # - role: vmware.vmware-workstation
+  #   vars:
+  #     workstation_license: "{{ vmware_workstation_license }}"
+  #--------------------------------------------------------------------------------
+  # R (https://github.com/Oefenweb/ansible-r)
+  # NOTE: Ubuntu only
+  #--------------------------------------------------------------------------------
+  - role: oefenweb_r
+    vars:
+      r_install_dev: true
+      r_install:
+        - r-recommended
+      r_packages:
+        - name: dplyr
+        - name: Biobase
+          type: bioconductor
+        - name: mangothecat/franc
+          type: github
+  #--------------------------------------------------------------------------------
+  # R Server (https://github.com/Oefenweb/ansible-rstudio-server)
+  # NOTE: Ubuntu only
+  #--------------------------------------------------------------------------------
+  - role: oefenweb_rstudio_server
+  #--------------------------------------------------------------------------------
+  # Anaconda
+  # https://galaxy.ansible.com/andrewrothstein/anaconda
+  #--------------------------------------------------------------------------------
+  - role: andrewrothstein.anaconda
+  #--------------------------------------------------------------------------------
+  # MS exchange
+  #--------------------------------------------------------------------------------
+  - role: site.evolution
+  #--------------------------------------------------------------------------------
+  # NTLM proxy
+  #--------------------------------------------------------------------------------
+  - role: site.cntlm

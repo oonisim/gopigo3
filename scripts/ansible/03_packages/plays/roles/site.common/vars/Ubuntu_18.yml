@@ -1,0 +1,11 @@
+dist_packages:
+  - dnsutils
+  - cgroup-bin
+  - cgroup-lite
+  - cgroup-tools
+  - cgroupfs-mount
+  - libcgroup1
+  - gnome-tweak-tool
+  - samba
+  - smbclient
+  - cifs-utils

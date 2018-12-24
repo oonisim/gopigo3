@@ -1,0 +1,5 @@
+---
+# tasks file for site.pycharm
+- include_vars:  "{{ ansible_distribution }}.yml"
+- include_tasks: "{{ ansible_distribution }}.yml"
+

@@ -1,0 +1,28 @@
+#--------------------------------------------------------------------------------
+# https://docs.docker.com/install/linux/docker-ce/ubuntu/
+# https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
+#--------------------------------------------------------------------------------
+- name: Install docker pre-requisites
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ docker_prerequisites }}"
+
+- name: Add an docker CE apt key
+  apt_key:
+    url: "{{ apt_key_url_docker_ce }}"
+    id:  "{{ apt_key_docker_ce }}"
+
+- name: Add the docker CE repository to source list
+  apt_repository:
+    repo: "{{ apt_repository_docker_ce }}"
+    state: present
+
+- name: Install docker CE
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ docker_packages }}"
+
+- name: Verify Docker CE installation
+  command: "docker run hello-world"

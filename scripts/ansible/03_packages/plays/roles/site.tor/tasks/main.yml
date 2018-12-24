@@ -1,0 +1,5 @@
+- name: "Install tor"
+  package:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ tor_packages }}"

@@ -1,0 +1,8 @@
+[masters]
+192.168.43.59
+
+# Entire nodes
+[environment]
+
+[environment:children]
+masters

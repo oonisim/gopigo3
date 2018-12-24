@@ -1,0 +1,3 @@
+postman_packages:
+  - snapd
+  - snapd-xdg-open

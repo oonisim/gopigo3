@@ -1,0 +1,12 @@
+- name: Install ansible pre-requisites
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ ansible_prerequisites }}"
+
+- name: Install ansible
+  pip:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ ansible_pip_packages }}"
+

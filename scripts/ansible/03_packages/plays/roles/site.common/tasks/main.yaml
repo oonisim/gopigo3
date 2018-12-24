@@ -1,0 +1,13 @@
+- include_vars: "{{ ansible_distribution }}_{{ ansible_distribution_major_version}}.yml"
+
+- name: "Install packages"
+  package:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ packages }}"
+
+- name: "Install disribution packages"
+  package:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ dist_packages }}"
