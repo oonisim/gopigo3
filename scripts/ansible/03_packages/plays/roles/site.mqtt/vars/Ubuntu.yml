@@ -1,0 +1,5 @@
+cntlm_service: "cntlm"
+cntlm_packages:
+  - cntlm
+cntlm_conf: "/etc/cntlm.conf"
+cntlm_conf_template: "cntlm.conf.j2"

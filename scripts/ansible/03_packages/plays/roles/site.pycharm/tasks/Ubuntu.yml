@@ -1,5 +1,0 @@
-- name: "Install {{ pycharm_packages }}"c
-  snap:
-    name: "{{ pycharm_packages }}"
-    state: present
-    classic: yes

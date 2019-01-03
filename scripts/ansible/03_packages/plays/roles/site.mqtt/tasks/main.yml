@@ -1,0 +1,4 @@
+- name: "paho-mqtt"
+  pip:
+    name: "paho-mqtt"
+  become: True

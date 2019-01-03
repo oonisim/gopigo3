@@ -9,8 +9,4 @@ packages:
   - iftop
   - zip
   - unzip
-  - emacs
-  - nano
   - git
-  - openssh-server
-  - pylint

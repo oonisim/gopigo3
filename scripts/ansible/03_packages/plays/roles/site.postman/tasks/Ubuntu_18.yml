@@ -1,8 +1,0 @@
-- name: "Install snap"
-  package:
-    name: "{{ item }}"
-    state: latest
-  with_items: "{{ postman_packages }}"
-
-- name: "Install postman via snap"
-  command: snap install postman

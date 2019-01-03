@@ -1,6 +1,0 @@
-- name: packer install
-  unarchive:
-    src: "{{ packer_release_url }}/{{ packer_version }}/packer_{{ packer_version }}_{{ packer_platform }}_{{ packer_cpu_arch }}.zip"
-    dest: /usr/bin
-    remote_src: True
-

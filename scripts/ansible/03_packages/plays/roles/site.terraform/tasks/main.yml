@@ -1,6 +1,0 @@
-- name: terraform install
-  unarchive:
-    src: "{{ terraform_release_url }}/{{ terraform_version }}/terraform_{{ terraform_version }}_{{ terraform_platform }}_{{ terraform_cpu_arch }}.zip"
-    dest: /usr/bin
-    remote_src: True
-

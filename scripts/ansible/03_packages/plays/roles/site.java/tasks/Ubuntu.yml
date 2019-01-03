@@ -1,8 +1,0 @@
-# https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04
-- name: Install OpenJDK packages...
-  apt:
-    name: "{{ item }}"
-    update_cache: yes
-    state: present
-  with_items:
-    "{{ packages }}"

@@ -1,0 +1,990 @@
+2019-01-03 14:54:43,741 p=17783 u=masa |  ansible-playbook 2.7.1
+  config file = /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg
+  configured module search path = [u'/home/masa/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python2.7/dist-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 2.7.15rc1 (default, Nov 12 2018, 14:31:15) [GCC 7.3.0]
+2019-01-03 14:54:43,741 p=17783 u=masa |  Using /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg as config file
+2019-01-03 14:54:43,741 p=17783 u=masa |  Reading vault password file: /home/masa/.ansible/.vault_pass.txt
+2019-01-03 14:54:43,741 p=17783 u=masa |  setting up inventory plugins
+2019-01-03 14:54:43,757 p=17783 u=masa |  /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-01-03 14:54:43,763 p=17783 u=masa |  Parsed /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts inventory source with ini plugin
+2019-01-03 14:54:43,772 p=17783 u=masa |  ERROR! failed to combine variables, expected dicts but got a 'dict' and a 'AnsibleUnicode': 
+{}
+"--"
+2019-01-03 14:55:40,902 p=17890 u=masa |  ansible-playbook 2.7.1
+  config file = /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg
+  configured module search path = [u'/home/masa/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python2.7/dist-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 2.7.15rc1 (default, Nov 12 2018, 14:31:15) [GCC 7.3.0]
+2019-01-03 14:55:40,902 p=17890 u=masa |  Using /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg as config file
+2019-01-03 14:55:40,902 p=17890 u=masa |  Reading vault password file: /home/masa/.ansible/.vault_pass.txt
+2019-01-03 14:55:40,902 p=17890 u=masa |  setting up inventory plugins
+2019-01-03 14:55:40,916 p=17890 u=masa |  /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-01-03 14:55:40,921 p=17890 u=masa |  Parsed /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts inventory source with ini plugin
+2019-01-03 14:55:40,929 p=17890 u=masa |  ERROR! failed to combine variables, expected dicts but got a 'dict' and a 'AnsibleUnicode': 
+{}
+"--"
+2019-01-03 14:57:25,203 p=17989 u=masa |  ansible-playbook 2.7.1
+  config file = /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg
+  configured module search path = [u'/home/masa/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python2.7/dist-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 2.7.15rc1 (default, Nov 12 2018, 14:31:15) [GCC 7.3.0]
+2019-01-03 14:57:25,203 p=17989 u=masa |  Using /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg as config file
+2019-01-03 14:57:25,203 p=17989 u=masa |  Reading vault password file: /home/masa/.ansible/.vault_pass.txt
+2019-01-03 14:57:25,203 p=17989 u=masa |  setting up inventory plugins
+2019-01-03 14:57:25,217 p=17989 u=masa |  /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-01-03 14:57:25,222 p=17989 u=masa |  Parsed /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts inventory source with ini plugin
+2019-01-03 14:57:25,229 p=17989 u=masa |  ERROR! 'debug' is not a valid attribute for a Play
+
+The error appears to have been in '/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/site.yml': line 1, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- debug:
+  ^ here
+
+2019-01-03 14:58:40,717 p=18136 u=masa |  ansible-playbook 2.7.1
+  config file = /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg
+  configured module search path = [u'/home/masa/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python2.7/dist-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 2.7.15rc1 (default, Nov 12 2018, 14:31:15) [GCC 7.3.0]
+2019-01-03 14:58:40,717 p=18136 u=masa |  Using /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg as config file
+2019-01-03 14:58:40,717 p=18136 u=masa |  Reading vault password file: /home/masa/.ansible/.vault_pass.txt
+2019-01-03 14:58:40,717 p=18136 u=masa |  setting up inventory plugins
+2019-01-03 14:58:40,731 p=18136 u=masa |  /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-01-03 14:58:40,736 p=18136 u=masa |  Parsed /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts inventory source with ini plugin
+2019-01-03 14:58:40,744 p=18136 u=masa |  ERROR! failed to combine variables, expected dicts but got a 'dict' and a 'AnsibleUnicode': 
+{}
+"--"
+2019-01-03 15:00:07,012 p=18270 u=masa |  ansible-playbook 2.7.1
+  config file = /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg
+  configured module search path = [u'/home/masa/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python2.7/dist-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 2.7.15rc1 (default, Nov 12 2018, 14:31:15) [GCC 7.3.0]
+2019-01-03 15:00:07,012 p=18270 u=masa |  Using /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg as config file
+2019-01-03 15:00:07,013 p=18270 u=masa |  Reading vault password file: /home/masa/.ansible/.vault_pass.txt
+2019-01-03 15:00:07,013 p=18270 u=masa |  setting up inventory plugins
+2019-01-03 15:00:07,026 p=18270 u=masa |  /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-01-03 15:00:07,031 p=18270 u=masa |  Parsed /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts inventory source with ini plugin
+2019-01-03 15:00:07,101 p=18270 u=masa |  Loading callback plugin default of type stdout, v2.0 from /usr/local/lib/python2.7/dist-packages/ansible/plugins/callback/default.pyc
+2019-01-03 15:00:07,165 p=18270 u=masa |  [DEPRECATION WARNING]: human_log callback, does not support setting 'options', it will work for now,  but this will be required in the future and 
+should be updated,  see the 2.4 porting guide for details.. This feature will be removed in version 2.9. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2019-01-03 15:00:07,183 p=18270 u=masa |  Loading callback plugin profile_tasks of type aggregate, v2.0 from /usr/local/lib/python2.7/dist-packages/ansible/plugins/callback/profile_tasks.pyc
+2019-01-03 15:00:07,210 p=18270 u=masa |   ____________________
+< PLAYBOOK: site.yml >
+ --------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:00:07,211 p=18270 u=masa |  1 plays in site.yml
+2019-01-03 15:00:07,227 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-01-03 15:00:07,244 p=18270 u=masa |   __________________
+< PLAY [localhost] >
+ ------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:00:07,244 p=18270 u=masa |  skipping: no hosts matched
+2019-01-03 15:00:07,257 p=18270 u=masa |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:00:07,258 p=18270 u=masa |  Thursday 03 January 2019  15:00:07 +1000 (0:00:00.076)       0:00:00.076 ****** 
+2019-01-03 15:00:07,258 p=18270 u=masa |  =============================================================================== 
+2019-01-03 15:00:36,552 p=18345 u=masa |  ansible-playbook 2.7.1
+  config file = /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg
+  configured module search path = [u'/home/masa/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python2.7/dist-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 2.7.15rc1 (default, Nov 12 2018, 14:31:15) [GCC 7.3.0]
+2019-01-03 15:00:36,552 p=18345 u=masa |  Using /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg as config file
+2019-01-03 15:00:36,552 p=18345 u=masa |  Reading vault password file: /home/masa/.ansible/.vault_pass.txt
+2019-01-03 15:00:36,552 p=18345 u=masa |  setting up inventory plugins
+2019-01-03 15:00:36,565 p=18345 u=masa |  /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-01-03 15:00:36,571 p=18345 u=masa |  Parsed /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts inventory source with ini plugin
+2019-01-03 15:00:36,602 p=18345 u=masa |  Loading callback plugin default of type stdout, v2.0 from /usr/local/lib/python2.7/dist-packages/ansible/plugins/callback/default.pyc
+2019-01-03 15:00:36,642 p=18345 u=masa |  [DEPRECATION WARNING]: human_log callback, does not support setting 'options', it will work for now,  but this will be required in the future and 
+should be updated,  see the 2.4 porting guide for details.. This feature will be removed in version 2.9. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2019-01-03 15:00:36,656 p=18345 u=masa |  Loading callback plugin profile_tasks of type aggregate, v2.0 from /usr/local/lib/python2.7/dist-packages/ansible/plugins/callback/profile_tasks.pyc
+2019-01-03 15:00:36,680 p=18345 u=masa |   ____________________
+< PLAYBOOK: site.yml >
+ --------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:00:36,680 p=18345 u=masa |  1 plays in site.yml
+2019-01-03 15:00:36,689 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-01-03 15:00:36,706 p=18345 u=masa |   ____________________
+< PLAY [environment] >
+ --------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:00:36,715 p=18345 u=masa |  META: ran handlers
+2019-01-03 15:00:36,735 p=18345 u=masa |   _____________
+< TASK [ping] >
+ -------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:00:36,735 p=18345 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/site.yml:4
+2019-01-03 15:00:36,735 p=18345 u=masa |  Thursday 03 January 2019  15:00:36 +1000 (0:00:00.080)       0:00:00.080 ****** 
+2019-01-03 15:00:36,759 p=18345 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/basic.py
+2019-01-03 15:00:36,808 p=18345 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/parsing/convert_bool.py
+2019-01-03 15:00:36,808 p=18345 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/_collections_compat.py
+2019-01-03 15:00:36,809 p=18345 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/six/__init__.py
+2019-01-03 15:00:36,809 p=18345 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/_text.py
+2019-01-03 15:00:36,809 p=18345 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/parsing/__init__.py
+2019-01-03 15:00:36,809 p=18345 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/pycompat24.py
+2019-01-03 15:00:36,809 p=18345 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/process.py
+2019-01-03 15:00:36,809 p=18345 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/__init__.py
+2019-01-03 15:00:36,810 p=18345 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/file.py
+2019-01-03 15:00:36,824 p=18345 u=masa |  Using module file /usr/local/lib/python2.7/dist-packages/ansible/modules/system/ping.py
+2019-01-03 15:00:38,763 p=18345 u=masa |  ok: [192.168.43.212] => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    }, 
+    "ping": "pong"
+}
+2019-01-03 15:00:38,764 p=18345 u=masa |  META: ran handlers
+2019-01-03 15:00:38,764 p=18345 u=masa |  META: ran handlers
+2019-01-03 15:00:38,778 p=18345 u=masa |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:00:38,779 p=18345 u=masa |  192.168.43.212             : ok=1    changed=0    unreachable=0    failed=0   
+2019-01-03 15:00:38,779 p=18345 u=masa |  Thursday 03 January 2019  15:00:38 +1000 (0:00:02.043)       0:00:02.123 ****** 
+2019-01-03 15:00:38,779 p=18345 u=masa |  =============================================================================== 
+2019-01-03 15:00:38,779 p=18345 u=masa |  ping -------------------------------------------------------------------------------------------------------------------------------------------- 2.04s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/site.yml:4 -------------------------------------------------------
+2019-01-03 15:01:34,257 p=18443 u=masa |  ansible-playbook 2.7.1
+  config file = /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg
+  configured module search path = [u'/home/masa/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python2.7/dist-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 2.7.15rc1 (default, Nov 12 2018, 14:31:15) [GCC 7.3.0]
+2019-01-03 15:01:34,258 p=18443 u=masa |  Using /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg as config file
+2019-01-03 15:01:34,258 p=18443 u=masa |  Reading vault password file: /home/masa/.ansible/.vault_pass.txt
+2019-01-03 15:01:34,258 p=18443 u=masa |  setting up inventory plugins
+2019-01-03 15:01:34,271 p=18443 u=masa |  /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-01-03 15:01:34,276 p=18443 u=masa |  Parsed /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts inventory source with ini plugin
+2019-01-03 15:01:34,310 p=18443 u=masa |  ERROR! failed to combine variables, expected dicts but got a 'dict' and a 'AnsibleUnicode': 
+{}
+"--"
+2019-01-03 15:01:50,120 p=18513 u=masa |  ansible-playbook 2.7.1
+  config file = /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg
+  configured module search path = [u'/home/masa/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python2.7/dist-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 2.7.15rc1 (default, Nov 12 2018, 14:31:15) [GCC 7.3.0]
+2019-01-03 15:01:50,120 p=18513 u=masa |  Using /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg as config file
+2019-01-03 15:01:50,120 p=18513 u=masa |  Reading vault password file: /home/masa/.ansible/.vault_pass.txt
+2019-01-03 15:01:50,120 p=18513 u=masa |  setting up inventory plugins
+2019-01-03 15:01:50,134 p=18513 u=masa |  /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-01-03 15:01:50,139 p=18513 u=masa |  Parsed /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts inventory source with ini plugin
+2019-01-03 15:01:50,171 p=18513 u=masa |  Loading callback plugin default of type stdout, v2.0 from /usr/local/lib/python2.7/dist-packages/ansible/plugins/callback/default.pyc
+2019-01-03 15:01:50,211 p=18513 u=masa |  [DEPRECATION WARNING]: human_log callback, does not support setting 'options', it will work for now,  but this will be required in the future and 
+should be updated,  see the 2.4 porting guide for details.. This feature will be removed in version 2.9. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2019-01-03 15:01:50,226 p=18513 u=masa |  Loading callback plugin profile_tasks of type aggregate, v2.0 from /usr/local/lib/python2.7/dist-packages/ansible/plugins/callback/profile_tasks.pyc
+2019-01-03 15:01:50,250 p=18513 u=masa |   ____________________
+< PLAYBOOK: site.yml >
+ --------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:01:50,250 p=18513 u=masa |  1 plays in site.yml
+2019-01-03 15:01:50,259 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-01-03 15:01:50,276 p=18513 u=masa |   ____________________________________________
+< PLAY [Pinging to verify Ansible itself...] >
+ --------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:01:50,278 p=18513 u=masa |  META: ran handlers
+2019-01-03 15:01:50,297 p=18513 u=masa |   _____________
+< TASK [ping] >
+ -------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:01:50,297 p=18513 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/site.yml:5
+2019-01-03 15:01:50,297 p=18513 u=masa |  Thursday 03 January 2019  15:01:50 +1000 (0:00:00.072)       0:00:00.072 ****** 
+2019-01-03 15:01:50,317 p=18513 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/basic.py
+2019-01-03 15:01:50,365 p=18513 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/parsing/convert_bool.py
+2019-01-03 15:01:50,365 p=18513 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/_collections_compat.py
+2019-01-03 15:01:50,366 p=18513 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/six/__init__.py
+2019-01-03 15:01:50,366 p=18513 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/_text.py
+2019-01-03 15:01:50,366 p=18513 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/parsing/__init__.py
+2019-01-03 15:01:50,366 p=18513 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/pycompat24.py
+2019-01-03 15:01:50,366 p=18513 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/process.py
+2019-01-03 15:01:50,366 p=18513 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/__init__.py
+2019-01-03 15:01:50,366 p=18513 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/file.py
+2019-01-03 15:01:50,380 p=18513 u=masa |  Using module file /usr/local/lib/python2.7/dist-packages/ansible/modules/system/ping.py
+2019-01-03 15:01:52,289 p=18513 u=masa |  ok: [192.168.43.212] => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    }, 
+    "ping": "pong"
+}
+2019-01-03 15:01:52,289 p=18513 u=masa |  META: ran handlers
+2019-01-03 15:01:52,290 p=18513 u=masa |  META: ran handlers
+2019-01-03 15:01:52,306 p=18513 u=masa |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:01:52,306 p=18513 u=masa |  192.168.43.212             : ok=1    changed=0    unreachable=0    failed=0   
+2019-01-03 15:01:52,306 p=18513 u=masa |  Thursday 03 January 2019  15:01:52 +1000 (0:00:02.009)       0:00:02.081 ****** 
+2019-01-03 15:01:52,307 p=18513 u=masa |  =============================================================================== 
+2019-01-03 15:01:52,307 p=18513 u=masa |  ping -------------------------------------------------------------------------------------------------------------------------------------------- 2.01s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/site.yml:5 -------------------------------------------------------
+2019-01-03 15:03:47,184 p=18662 u=masa |  ansible-playbook 2.7.1
+  config file = /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg
+  configured module search path = [u'/home/masa/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python2.7/dist-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 2.7.15rc1 (default, Nov 12 2018, 14:31:15) [GCC 7.3.0]
+2019-01-03 15:03:47,184 p=18662 u=masa |  Using /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/ansible.cfg as config file
+2019-01-03 15:03:47,185 p=18662 u=masa |  Reading vault password file: /home/masa/.ansible/.vault_pass.txt
+2019-01-03 15:03:47,185 p=18662 u=masa |  setting up inventory plugins
+2019-01-03 15:03:47,198 p=18662 u=masa |  /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-01-03 15:03:47,204 p=18662 u=masa |  Parsed /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/hosts/hosts inventory source with ini plugin
+2019-01-03 15:03:47,291 p=18662 u=masa |  Loading callback plugin default of type stdout, v2.0 from /usr/local/lib/python2.7/dist-packages/ansible/plugins/callback/default.pyc
+2019-01-03 15:03:47,331 p=18662 u=masa |  [DEPRECATION WARNING]: human_log callback, does not support setting 'options', it will work for now,  but this will be required in the future and 
+should be updated,  see the 2.4 porting guide for details.. This feature will be removed in version 2.9. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2019-01-03 15:03:47,345 p=18662 u=masa |  Loading callback plugin profile_tasks of type aggregate, v2.0 from /usr/local/lib/python2.7/dist-packages/ansible/plugins/callback/profile_tasks.pyc
+2019-01-03 15:03:47,370 p=18662 u=masa |   ____________________
+< PLAYBOOK: site.yml >
+ --------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:47,370 p=18662 u=masa |  2 plays in site.yml
+2019-01-03 15:03:47,379 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-01-03 15:03:47,396 p=18662 u=masa |   ____________________________________________
+< PLAY [Pinging to verify Ansible itself...] >
+ --------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:47,398 p=18662 u=masa |  META: ran handlers
+2019-01-03 15:03:47,417 p=18662 u=masa |   _____________
+< TASK [ping] >
+ -------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:47,417 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/site.yml:5
+2019-01-03 15:03:47,417 p=18662 u=masa |  Thursday 03 January 2019  15:03:47 +1000 (0:00:00.072)       0:00:00.072 ****** 
+2019-01-03 15:03:47,437 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/basic.py
+2019-01-03 15:03:47,485 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/parsing/convert_bool.py
+2019-01-03 15:03:47,485 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/_collections_compat.py
+2019-01-03 15:03:47,486 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/six/__init__.py
+2019-01-03 15:03:47,486 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/_text.py
+2019-01-03 15:03:47,486 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/parsing/__init__.py
+2019-01-03 15:03:47,486 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/pycompat24.py
+2019-01-03 15:03:47,487 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/process.py
+2019-01-03 15:03:47,487 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/__init__.py
+2019-01-03 15:03:47,487 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/file.py
+2019-01-03 15:03:47,501 p=18662 u=masa |  Using module file /usr/local/lib/python2.7/dist-packages/ansible/modules/system/ping.py
+2019-01-03 15:03:49,445 p=18662 u=masa |  ok: [192.168.43.212] => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    }, 
+    "ping": "pong"
+}
+2019-01-03 15:03:49,447 p=18662 u=masa |  META: ran handlers
+2019-01-03 15:03:49,448 p=18662 u=masa |  META: ran handlers
+2019-01-03 15:03:49,471 p=18662 u=masa |   ________________________________________
+< PLAY [Setup Ansible pre-requisites...] >
+ ----------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:49,473 p=18662 u=masa |  META: ran handlers
+2019-01-03 15:03:49,496 p=18662 u=masa |   _____________________________________________________________
+/ TASK [python : Check if Ubuntu, otherwise carry on ignoring \
+\ errors.]                                                    /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:49,496 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:16
+2019-01-03 15:03:49,497 p=18662 u=masa |  Thursday 03 January 2019  15:03:49 +1000 (0:00:02.079)       0:00:02.152 ****** 
+2019-01-03 15:03:50,559 p=18662 u=masa |  Escalation succeeded
+2019-01-03 15:03:50,588 p=18662 u=masa |  fatal: [192.168.43.212]: FAILED! => {
+    "changed": true, 
+    "msg": "non-zero return code", 
+    "rc": 1, 
+    "stderr": "OpenSSH_7.6p1 Ubuntu-4ubuntu0.1, OpenSSL 1.0.2n  7 Dec 2017\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 19: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 18679\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 1\r\nShared connection to 192.168.43.212 closed.\r\n", 
+    "stderr_lines": [
+        "OpenSSH_7.6p1 Ubuntu-4ubuntu0.1, OpenSSL 1.0.2n  7 Dec 2017", 
+        "debug1: Reading configuration data /etc/ssh/ssh_config", 
+        "debug1: /etc/ssh/ssh_config line 19: Applying options for *", 
+        "debug1: auto-mux: Trying existing master", 
+        "debug2: fd 3 setting O_NONBLOCK", 
+        "debug2: mux_client_hello_exchange: master version 4", 
+        "debug3: mux_client_forwards: request forwardings: 0 local, 0 remote", 
+        "debug3: mux_client_request_session: entering", 
+        "debug3: mux_client_request_alive: entering", 
+        "debug3: mux_client_request_alive: done pid = 18679", 
+        "debug3: mux_client_request_session: session request sent", 
+        "debug1: mux_client_request_session: master session id: 2", 
+        "debug3: mux_client_read_packet: read header failed: Broken pipe", 
+        "debug2: Received exit status from master 1", 
+        "Shared connection to 192.168.43.212 closed."
+    ], 
+    "stdout": "bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)\r\n", 
+    "stdout_lines": [
+        "bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)"
+    ]
+}
+2019-01-03 15:03:50,589 p=18662 u=masa |  ...ignoring
+2019-01-03 15:03:50,605 p=18662 u=masa |   _____________________________________________________________
+/ TASK [python : Check if CentOS, otherwise carry on ignoring \
+\ errors.]                                                    /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:50,606 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:23
+2019-01-03 15:03:50,606 p=18662 u=masa |  Thursday 03 January 2019  15:03:50 +1000 (0:00:01.109)       0:00:03.261 ****** 
+2019-01-03 15:03:50,730 p=18662 u=masa |  Escalation succeeded
+2019-01-03 15:03:50,769 p=18662 u=masa |  fatal: [192.168.43.212]: FAILED! => {
+    "changed": true, 
+    "msg": "non-zero return code", 
+    "rc": 1, 
+    "stderr": "OpenSSH_7.6p1 Ubuntu-4ubuntu0.1, OpenSSL 1.0.2n  7 Dec 2017\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 19: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 18679\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 1\r\nShared connection to 192.168.43.212 closed.\r\n", 
+    "stderr_lines": [
+        "OpenSSH_7.6p1 Ubuntu-4ubuntu0.1, OpenSSL 1.0.2n  7 Dec 2017", 
+        "debug1: Reading configuration data /etc/ssh/ssh_config", 
+        "debug1: /etc/ssh/ssh_config line 19: Applying options for *", 
+        "debug1: auto-mux: Trying existing master", 
+        "debug2: fd 3 setting O_NONBLOCK", 
+        "debug2: mux_client_hello_exchange: master version 4", 
+        "debug3: mux_client_forwards: request forwardings: 0 local, 0 remote", 
+        "debug3: mux_client_request_session: entering", 
+        "debug3: mux_client_request_alive: entering", 
+        "debug3: mux_client_request_alive: done pid = 18679", 
+        "debug3: mux_client_request_session: session request sent", 
+        "debug1: mux_client_request_session: master session id: 2", 
+        "debug3: mux_client_read_packet: read header failed: Broken pipe", 
+        "debug2: Received exit status from master 1", 
+        "Shared connection to 192.168.43.212 closed."
+    ], 
+    "stdout": "bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)\r\n", 
+    "stdout_lines": [
+        "bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)"
+    ]
+}
+2019-01-03 15:03:50,770 p=18662 u=masa |  ...ignoring
+2019-01-03 15:03:50,806 p=18662 u=masa |   _____________________________________________________________
+/ TASK [python : Check if RedHat, otherwise carry on ignoring \
+\ errors.]                                                    /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:50,806 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:28
+2019-01-03 15:03:50,806 p=18662 u=masa |  Thursday 03 January 2019  15:03:50 +1000 (0:00:00.200)       0:00:03.461 ****** 
+2019-01-03 15:03:50,929 p=18662 u=masa |  Escalation succeeded
+2019-01-03 15:03:50,968 p=18662 u=masa |  fatal: [192.168.43.212]: FAILED! => {
+    "changed": true, 
+    "msg": "non-zero return code", 
+    "rc": 1, 
+    "stderr": "OpenSSH_7.6p1 Ubuntu-4ubuntu0.1, OpenSSL 1.0.2n  7 Dec 2017\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 19: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 18679\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 1\r\nShared connection to 192.168.43.212 closed.\r\n", 
+    "stderr_lines": [
+        "OpenSSH_7.6p1 Ubuntu-4ubuntu0.1, OpenSSL 1.0.2n  7 Dec 2017", 
+        "debug1: Reading configuration data /etc/ssh/ssh_config", 
+        "debug1: /etc/ssh/ssh_config line 19: Applying options for *", 
+        "debug1: auto-mux: Trying existing master", 
+        "debug2: fd 3 setting O_NONBLOCK", 
+        "debug2: mux_client_hello_exchange: master version 4", 
+        "debug3: mux_client_forwards: request forwardings: 0 local, 0 remote", 
+        "debug3: mux_client_request_session: entering", 
+        "debug3: mux_client_request_alive: entering", 
+        "debug3: mux_client_request_alive: done pid = 18679", 
+        "debug3: mux_client_request_session: session request sent", 
+        "debug1: mux_client_request_session: master session id: 2", 
+        "debug3: mux_client_read_packet: read header failed: Broken pipe", 
+        "debug2: Received exit status from master 1", 
+        "Shared connection to 192.168.43.212 closed."
+    ], 
+    "stdout": "bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)\r\n", 
+    "stdout_lines": [
+        "bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)"
+    ]
+}
+2019-01-03 15:03:50,969 p=18662 u=masa |  ...ignoring
+2019-01-03 15:03:51,003 p=18662 u=masa |   __________________________________________________
+< TASK [python : Check if python2 is available...] >
+ --------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,003 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:33
+2019-01-03 15:03:51,003 p=18662 u=masa |  Thursday 03 January 2019  15:03:50 +1000 (0:00:00.197)       0:00:03.659 ****** 
+2019-01-03 15:03:51,125 p=18662 u=masa |  Escalation succeeded
+2019-01-03 15:03:51,159 p=18662 u=masa |  changed: [192.168.43.212] => {
+    "changed": true, 
+    "rc": 0, 
+    "stderr": "OpenSSH_7.6p1 Ubuntu-4ubuntu0.1, OpenSSL 1.0.2n  7 Dec 2017\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 19: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 18679\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\nShared connection to 192.168.43.212 closed.\r\n", 
+    "stderr_lines": [
+        "OpenSSH_7.6p1 Ubuntu-4ubuntu0.1, OpenSSL 1.0.2n  7 Dec 2017", 
+        "debug1: Reading configuration data /etc/ssh/ssh_config", 
+        "debug1: /etc/ssh/ssh_config line 19: Applying options for *", 
+        "debug1: auto-mux: Trying existing master", 
+        "debug2: fd 3 setting O_NONBLOCK", 
+        "debug2: mux_client_hello_exchange: master version 4", 
+        "debug3: mux_client_forwards: request forwardings: 0 local, 0 remote", 
+        "debug3: mux_client_request_session: entering", 
+        "debug3: mux_client_request_alive: entering", 
+        "debug3: mux_client_request_alive: done pid = 18679", 
+        "debug3: mux_client_request_session: session request sent", 
+        "debug1: mux_client_request_session: master session id: 2", 
+        "debug3: mux_client_read_packet: read header failed: Broken pipe", 
+        "debug2: Received exit status from master 0", 
+        "Shared connection to 192.168.43.212 closed."
+    ], 
+    "stdout": "bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)\r\n/usr/bin/python2\r\n", 
+    "stdout_lines": [
+        "bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)", 
+        "/usr/bin/python2"
+    ]
+}
+2019-01-03 15:03:51,218 p=18662 u=masa |   ______________________________
+< TASK [python : include_vars] >
+ ------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,219 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:41
+2019-01-03 15:03:51,219 p=18662 u=masa |  Thursday 03 January 2019  15:03:51 +1000 (0:00:00.215)       0:00:03.874 ****** 
+2019-01-03 15:03:51,230 p=18662 u=masa |  skipping: [192.168.43.212] => {
+    "changed": false, 
+    "skip_reason": "Conditional result was False"
+}
+2019-01-03 15:03:51,248 p=18662 u=masa |   __________________________________________
+< TASK [python : Ubuntu apt-get update...] >
+ ------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,248 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:45
+2019-01-03 15:03:51,249 p=18662 u=masa |  Thursday 03 January 2019  15:03:51 +1000 (0:00:00.029)       0:00:03.904 ****** 
+2019-01-03 15:03:51,262 p=18662 u=masa |  skipping: [192.168.43.212] => (item=apt update -y)  => {
+    "changed": false, 
+    "item": "apt update -y", 
+    "skip_reason": "Conditional result was False"
+}
+2019-01-03 15:03:51,264 p=18662 u=masa |  skipping: [192.168.43.212] => (item=apt-get -qy update)  => {
+    "changed": false, 
+    "item": "apt-get -qy update", 
+    "skip_reason": "Conditional result was False"
+}
+2019-01-03 15:03:51,281 p=18662 u=masa |   ___________________________________________________
+< TASK [python : Ubuntu install Python packages...] >
+ ---------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,281 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:52
+2019-01-03 15:03:51,281 p=18662 u=masa |  Thursday 03 January 2019  15:03:51 +1000 (0:00:00.032)       0:00:03.937 ****** 
+2019-01-03 15:03:51,292 p=18662 u=masa |  skipping: [192.168.43.212] => {
+    "changed": false, 
+    "skip_reason": "Conditional result was False"
+}
+2019-01-03 15:03:51,309 p=18662 u=masa |   _____________________________________________________________
+< TASK [python : Ubuntu install Python pip (remove first)...] >
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,309 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:58
+2019-01-03 15:03:51,309 p=18662 u=masa |  Thursday 03 January 2019  15:03:51 +1000 (0:00:00.027)       0:00:03.964 ****** 
+2019-01-03 15:03:51,317 p=18662 u=masa |  skipping: [192.168.43.212] => {
+    "changed": false, 
+    "skip_reason": "Conditional result was False"
+}
+2019-01-03 15:03:51,334 p=18662 u=masa |   ______________________________________________
+< TASK [python : Ubuntu install Python pip...] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,334 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:63
+2019-01-03 15:03:51,334 p=18662 u=masa |  Thursday 03 January 2019  15:03:51 +1000 (0:00:00.025)       0:00:03.990 ****** 
+2019-01-03 15:03:51,346 p=18662 u=masa |  skipping: [192.168.43.212] => (item=wget -O get-pip.py https://bootstrap.pypa.io/get-pip.py)  => {
+    "changed": false, 
+    "item": "wget -O get-pip.py https://bootstrap.pypa.io/get-pip.py", 
+    "skip_reason": "Conditional result was False"
+}
+2019-01-03 15:03:51,348 p=18662 u=masa |  skipping: [192.168.43.212] => (item=python get-pip.py)  => {
+    "changed": false, 
+    "item": "python get-pip.py", 
+    "skip_reason": "Conditional result was False"
+}
+2019-01-03 15:03:51,365 p=18662 u=masa |   ______________________________
+< TASK [python : include_vars] >
+ ------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,366 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:76
+2019-01-03 15:03:51,366 p=18662 u=masa |  Thursday 03 January 2019  15:03:51 +1000 (0:00:00.031)       0:00:04.021 ****** 
+2019-01-03 15:03:51,375 p=18662 u=masa |  skipping: [192.168.43.212] => {
+    "changed": false, 
+    "skip_reason": "Conditional result was False"
+}
+2019-01-03 15:03:51,392 p=18662 u=masa |   _______________________________________
+< TASK [python : CentOS yum update ...] >
+ ---------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,392 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:79
+2019-01-03 15:03:51,392 p=18662 u=masa |  Thursday 03 January 2019  15:03:51 +1000 (0:00:00.026)       0:00:04.048 ****** 
+2019-01-03 15:03:51,400 p=18662 u=masa |  skipping: [192.168.43.212] => {
+    "changed": false, 
+    "skip_reason": "Conditional result was False"
+}
+2019-01-03 15:03:51,417 p=18662 u=masa |   ___________________________________________________
+< TASK [python : CentOS install Python packages...] >
+ ---------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,417 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:83
+2019-01-03 15:03:51,417 p=18662 u=masa |  Thursday 03 January 2019  15:03:51 +1000 (0:00:00.025)       0:00:04.073 ****** 
+2019-01-03 15:03:51,427 p=18662 u=masa |  skipping: [192.168.43.212] => {
+    "changed": false, 
+    "skip_reason": "Conditional result was False"
+}
+2019-01-03 15:03:51,444 p=18662 u=masa |   ______________________________
+< TASK [python : include_vars] >
+ ------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,444 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:91
+2019-01-03 15:03:51,444 p=18662 u=masa |  Thursday 03 January 2019  15:03:51 +1000 (0:00:00.027)       0:00:04.100 ****** 
+2019-01-03 15:03:51,453 p=18662 u=masa |  skipping: [192.168.43.212] => {
+    "changed": false, 
+    "skip_reason": "Conditional result was False"
+}
+2019-01-03 15:03:51,470 p=18662 u=masa |   ______________________________________
+< TASK [python : RedHat yum update...] >
+ --------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,470 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:94
+2019-01-03 15:03:51,470 p=18662 u=masa |  Thursday 03 January 2019  15:03:51 +1000 (0:00:00.025)       0:00:04.126 ****** 
+2019-01-03 15:03:51,478 p=18662 u=masa |  skipping: [192.168.43.212] => {
+    "changed": false, 
+    "skip_reason": "Conditional result was False"
+}
+2019-01-03 15:03:51,497 p=18662 u=masa |   ____________________________________________
+< TASK [python : Check if EPEL is installed] >
+ --------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,497 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:98
+2019-01-03 15:03:51,498 p=18662 u=masa |  Thursday 03 January 2019  15:03:51 +1000 (0:00:00.027)       0:00:04.153 ****** 
+2019-01-03 15:03:51,506 p=18662 u=masa |  fatal: [192.168.43.212]: FAILED! => {
+    "msg": "The task includes an option with an undefined variable. The error was: 'epel_check' is undefined\n\nThe error appears to have been in '/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml': line 98, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Check if EPEL is installed\n  ^ here\n"
+}
+2019-01-03 15:03:51,506 p=18662 u=masa |  ...ignoring
+2019-01-03 15:03:51,524 p=18662 u=masa |   ___________________________________________________
+< TASK [python : RedHat install Python packages...] >
+ ---------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,525 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:103
+2019-01-03 15:03:51,525 p=18662 u=masa |  Thursday 03 January 2019  15:03:51 +1000 (0:00:00.027)       0:00:04.180 ****** 
+2019-01-03 15:03:51,535 p=18662 u=masa |  skipping: [192.168.43.212] => {
+    "changed": false, 
+    "skip_reason": "Conditional result was False"
+}
+2019-01-03 15:03:51,555 p=18662 u=masa |   ___________________________________________________
+< TASK [python : RedHat install Python packages...] >
+ ---------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,555 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:108
+2019-01-03 15:03:51,556 p=18662 u=masa |  Thursday 03 January 2019  15:03:51 +1000 (0:00:00.030)       0:00:04.211 ****** 
+2019-01-03 15:03:51,566 p=18662 u=masa |  skipping: [192.168.43.212] => {
+    "changed": false, 
+    "skip_reason": "Conditional result was False"
+}
+2019-01-03 15:03:51,585 p=18662 u=masa |   _______________________
+< TASK [python : setup] >
+ -----------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:51,585 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:116
+2019-01-03 15:03:51,585 p=18662 u=masa |  Thursday 03 January 2019  15:03:51 +1000 (0:00:00.029)       0:00:04.241 ****** 
+2019-01-03 15:03:51,626 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/basic.py
+2019-01-03 15:03:51,627 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/__init__.py
+2019-01-03 15:03:51,627 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/namespace.py
+2019-01-03 15:03:51,627 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/ansible_collector.py
+2019-01-03 15:03:51,627 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/default_collectors.py
+2019-01-03 15:03:51,659 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/parsing/convert_bool.py
+2019-01-03 15:03:51,659 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/_collections_compat.py
+2019-01-03 15:03:51,660 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/six/__init__.py
+2019-01-03 15:03:51,660 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/_text.py
+2019-01-03 15:03:51,660 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/parsing/__init__.py
+2019-01-03 15:03:51,661 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/pycompat24.py
+2019-01-03 15:03:51,661 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/process.py
+2019-01-03 15:03:51,661 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/__init__.py
+2019-01-03 15:03:51,661 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/file.py
+2019-01-03 15:03:51,675 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/compat.py
+2019-01-03 15:03:51,677 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/timeout.py
+2019-01-03 15:03:51,677 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/collector.py
+2019-01-03 15:03:51,689 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/network/freebsd.py
+2019-01-03 15:03:51,689 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/virtual/openbsd.py
+2019-01-03 15:03:51,689 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/network/base.py
+2019-01-03 15:03:51,689 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/hardware/dragonfly.py
+2019-01-03 15:03:51,689 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/network/dragonfly.py
+2019-01-03 15:03:51,690 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/hardware/aix.py
+2019-01-03 15:03:51,690 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/network/aix.py
+2019-01-03 15:03:51,690 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/hardware/linux.py
+2019-01-03 15:03:51,690 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/platform.py
+2019-01-03 15:03:51,691 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/hardware/hpux.py
+2019-01-03 15:03:51,691 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/cmdline.py
+2019-01-03 15:03:51,691 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/user.py
+2019-01-03 15:03:51,691 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/hardware/hurd.py
+2019-01-03 15:03:51,691 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/other/facter.py
+2019-01-03 15:03:51,691 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/network/hpux.py
+2019-01-03 15:03:51,692 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/distribution.py
+2019-01-03 15:03:51,692 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/virtual/freebsd.py
+2019-01-03 15:03:51,692 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/__init__.py
+2019-01-03 15:03:51,692 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/network/openbsd.py
+2019-01-03 15:03:51,692 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/network/darwin.py
+2019-01-03 15:03:51,692 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/network/iscsi.py
+2019-01-03 15:03:51,693 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/network/linux.py
+2019-01-03 15:03:51,693 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/hardware/sunos.py
+2019-01-03 15:03:51,693 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/network/sunos.py
+2019-01-03 15:03:51,693 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/chroot.py
+2019-01-03 15:03:51,693 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/apparmor.py
+2019-01-03 15:03:51,694 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/hardware/openbsd.py
+2019-01-03 15:03:51,694 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/local.py
+2019-01-03 15:03:51,694 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/other/ohai.py
+2019-01-03 15:03:51,694 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/other/__init__.py
+2019-01-03 15:03:51,694 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/service_mgr.py
+2019-01-03 15:03:51,694 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/network/hurd.py
+2019-01-03 15:03:51,695 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/virtual/hpux.py
+2019-01-03 15:03:51,695 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/fips.py
+2019-01-03 15:03:51,695 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/selinux.py
+2019-01-03 15:03:51,695 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/virtual/__init__.py
+2019-01-03 15:03:51,695 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/pkg_mgr.py
+2019-01-03 15:03:51,695 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/virtual/linux.py
+2019-01-03 15:03:51,696 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/virtual/base.py
+2019-01-03 15:03:51,696 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/hardware/darwin.py
+2019-01-03 15:03:51,696 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/virtual/dragonfly.py
+2019-01-03 15:03:51,696 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/ssh_pub_keys.py
+2019-01-03 15:03:51,696 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/network/__init__.py
+2019-01-03 15:03:51,696 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/hardware/__init__.py
+2019-01-03 15:03:51,696 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/lsb.py
+2019-01-03 15:03:51,696 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/date_time.py
+2019-01-03 15:03:51,696 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/virtual/netbsd.py
+2019-01-03 15:03:51,697 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/hardware/base.py
+2019-01-03 15:03:51,697 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/env.py
+2019-01-03 15:03:51,697 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/hardware/freebsd.py
+2019-01-03 15:03:51,697 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/network/netbsd.py
+2019-01-03 15:03:51,697 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/hardware/netbsd.py
+2019-01-03 15:03:51,697 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/caps.py
+2019-01-03 15:03:51,697 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/dns.py
+2019-01-03 15:03:51,698 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/virtual/sunos.py
+2019-01-03 15:03:51,698 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/system/python.py
+2019-01-03 15:03:51,698 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/network/generic_bsd.py
+2019-01-03 15:03:51,703 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/virtual/sysctl.py
+2019-01-03 15:03:51,703 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/utils.py
+2019-01-03 15:03:51,741 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/facts/sysctl.py
+2019-01-03 15:03:51,763 p=18662 u=masa |  Using module file /usr/local/lib/python2.7/dist-packages/ansible/modules/system/setup.py
+2019-01-03 15:03:51,847 p=18662 u=masa |  Escalation succeeded
+2019-01-03 15:03:53,800 p=18662 u=masa |  ok: [192.168.43.212]
+2019-01-03 15:03:53,828 p=18662 u=masa |   _____________________
+< TASK [python : pip] >
+ ---------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:03:53,828 p=18662 u=masa |  task path: /home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:118
+2019-01-03 15:03:53,828 p=18662 u=masa |  Thursday 03 January 2019  15:03:53 +1000 (0:00:02.242)       0:00:06.484 ****** 
+2019-01-03 15:03:53,857 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/_text.py
+2019-01-03 15:03:53,860 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/basic.py
+2019-01-03 15:03:53,861 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/six/__init__.py
+2019-01-03 15:03:53,895 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/parsing/convert_bool.py
+2019-01-03 15:03:53,895 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/_collections_compat.py
+2019-01-03 15:03:53,895 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/file.py
+2019-01-03 15:03:53,895 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/parsing/__init__.py
+2019-01-03 15:03:53,895 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/pycompat24.py
+2019-01-03 15:03:53,895 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/process.py
+2019-01-03 15:03:53,896 p=18662 u=masa |  Using module_utils file /usr/local/lib/python2.7/dist-packages/ansible/module_utils/common/__init__.py
+2019-01-03 15:03:53,908 p=18662 u=masa |  Using module file /usr/local/lib/python2.7/dist-packages/ansible/modules/packaging/language/pip.py
+2019-01-03 15:03:53,970 p=18662 u=masa |  Escalation succeeded
+2019-01-03 15:04:14,662 p=18662 u=masa |  changed: [192.168.43.212] => {
+    "changed": true, 
+    "cmd": [
+        "/usr/bin/pip2", 
+        "install", 
+        "boto"
+    ], 
+    "invocation": {
+        "module_args": {
+            "chdir": null, 
+            "editable": false, 
+            "executable": null, 
+            "extra_args": null, 
+            "name": [
+                "boto"
+            ], 
+            "requirements": null, 
+            "state": "present", 
+            "umask": null, 
+            "use_mirrors": true, 
+            "version": null, 
+            "virtualenv": null, 
+            "virtualenv_command": "virtualenv", 
+            "virtualenv_python": null, 
+            "virtualenv_site_packages": false
+        }
+    }, 
+    "name": [
+        "boto"
+    ], 
+    "requirements": null, 
+    "state": "present", 
+    "stderr": "", 
+    "stderr_lines": [], 
+    "stdout": "Collecting boto\n  Downloading https://files.pythonhosted.org/packages/23/10/c0b78c27298029e4454a472a1919bde20cb182dab1662cec7f2ca1dcc523/boto-2.49.0-py2.py3-none-any.whl (1.4MB)\nInstalling collected packages: boto\nSuccessfully installed boto-2.49.0\n", 
+    "stdout_lines": [
+        "Collecting boto", 
+        "  Downloading https://files.pythonhosted.org/packages/23/10/c0b78c27298029e4454a472a1919bde20cb182dab1662cec7f2ca1dcc523/boto-2.49.0-py2.py3-none-any.whl (1.4MB)", 
+        "Installing collected packages: boto", 
+        "Successfully installed boto-2.49.0"
+    ], 
+    "version": null, 
+    "virtualenv": null
+}
+2019-01-03 15:04:14,665 p=18662 u=masa |  META: ran handlers
+2019-01-03 15:04:14,666 p=18662 u=masa |  META: ran handlers
+2019-01-03 15:04:14,683 p=18662 u=masa |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-01-03 15:04:14,683 p=18662 u=masa |  192.168.43.212             : ok=8    changed=5    unreachable=0    failed=0   
+2019-01-03 15:04:14,683 p=18662 u=masa |  Thursday 03 January 2019  15:04:14 +1000 (0:00:20.855)       0:00:27.339 ****** 
+2019-01-03 15:04:14,684 p=18662 u=masa |  =============================================================================== 
+2019-01-03 15:04:14,684 p=18662 u=masa |  python : pip ----------------------------------------------------------------------------------------------------------------------------------- 20.86s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:118 ----------------------------------
+2019-01-03 15:04:14,684 p=18662 u=masa |  python : setup ---------------------------------------------------------------------------------------------------------------------------------- 2.24s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:116 ----------------------------------
+2019-01-03 15:04:14,684 p=18662 u=masa |  ping -------------------------------------------------------------------------------------------------------------------------------------------- 2.08s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/site.yml:5 -------------------------------------------------------
+2019-01-03 15:04:14,684 p=18662 u=masa |  python : Check if Ubuntu, otherwise carry on ignoring errors. ----------------------------------------------------------------------------------- 1.11s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:16 -----------------------------------
+2019-01-03 15:04:14,684 p=18662 u=masa |  python : Check if python2 is available... ------------------------------------------------------------------------------------------------------- 0.22s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:33 -----------------------------------
+2019-01-03 15:04:14,684 p=18662 u=masa |  python : Check if CentOS, otherwise carry on ignoring errors. ----------------------------------------------------------------------------------- 0.20s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:23 -----------------------------------
+2019-01-03 15:04:14,684 p=18662 u=masa |  python : Check if RedHat, otherwise carry on ignoring errors. ----------------------------------------------------------------------------------- 0.20s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:28 -----------------------------------
+2019-01-03 15:04:14,684 p=18662 u=masa |  python : Ubuntu apt-get update... --------------------------------------------------------------------------------------------------------------- 0.03s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:45 -----------------------------------
+2019-01-03 15:04:14,684 p=18662 u=masa |  python : Ubuntu install Python pip... ----------------------------------------------------------------------------------------------------------- 0.03s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:63 -----------------------------------
+2019-01-03 15:04:14,684 p=18662 u=masa |  python : RedHat install Python packages... ------------------------------------------------------------------------------------------------------ 0.03s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:103 ----------------------------------
+2019-01-03 15:04:14,684 p=18662 u=masa |  python : RedHat install Python packages... ------------------------------------------------------------------------------------------------------ 0.03s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:108 ----------------------------------
+2019-01-03 15:04:14,684 p=18662 u=masa |  python : include_vars --------------------------------------------------------------------------------------------------------------------------- 0.03s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:41 -----------------------------------
+2019-01-03 15:04:14,684 p=18662 u=masa |  python : RedHat yum update... ------------------------------------------------------------------------------------------------------------------- 0.03s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:94 -----------------------------------
+2019-01-03 15:04:14,685 p=18662 u=masa |  python : Ubuntu install Python packages... ------------------------------------------------------------------------------------------------------ 0.03s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:52 -----------------------------------
+2019-01-03 15:04:14,685 p=18662 u=masa |  python : Check if EPEL is installed ------------------------------------------------------------------------------------------------------------- 0.03s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:98 -----------------------------------
+2019-01-03 15:04:14,685 p=18662 u=masa |  python : CentOS install Python packages... ------------------------------------------------------------------------------------------------------ 0.03s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:83 -----------------------------------
+2019-01-03 15:04:14,685 p=18662 u=masa |  python : include_vars --------------------------------------------------------------------------------------------------------------------------- 0.03s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:76 -----------------------------------
+2019-01-03 15:04:14,685 p=18662 u=masa |  python : include_vars --------------------------------------------------------------------------------------------------------------------------- 0.03s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:91 -----------------------------------
+2019-01-03 15:04:14,685 p=18662 u=masa |  python : Ubuntu install Python pip (remove first)... -------------------------------------------------------------------------------------------- 0.03s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:58 -----------------------------------
+2019-01-03 15:04:14,685 p=18662 u=masa |  python : CentOS yum update ... ------------------------------------------------------------------------------------------------------------------ 0.03s
+/home/masa/home/repository/git/oonisim/gopigo3/scripts/ansible/01_prerequisite/plays/roles/python/tasks/main.yml:79 -----------------------------------

@@ -1,4 +1,0 @@
-- include_vars: "{{ ansible_distribution }}_{{ ansible_distribution_major_version}}.yml"
-- include_tasks: "{{ ansible_distribution }}_{{ ansible_distribution_major_version}}.yml"
-
-
