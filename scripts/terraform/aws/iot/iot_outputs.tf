@@ -13,3 +13,6 @@ output "aws_iot_thing_name" {
 output "aws_iot_thing_id" {
   value = "${aws_iot_thing.this.id}"
 }
+output "aws_iot_endpoint_address" {
+  value = "${data.aws_iot_endpoint.this.endpoint_address}"
+}

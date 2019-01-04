@@ -1,3 +1,12 @@
+#--------------------------------------------------------------------------------
+# Unique endpoint specific to the AWS account making the call.
+#--------------------------------------------------------------------------------
+data "aws_iot_endpoint" "this" {}
+
+#--------------------------------------------------------------------------------
+# [How do I create self-signed device certificates to authenticate my devices with AWS IoT?]
+# https://aws.amazon.com/premiumsupport/knowledge-center/iot-self-signed-certificates/
+#--------------------------------------------------------------------------------
 resource "aws_iot_certificate" "this" {
   csr    = "${file("${local.module_path}/pki/iot.csr")}"
   active = true

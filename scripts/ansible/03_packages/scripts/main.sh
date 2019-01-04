@@ -11,7 +11,6 @@ set -eu
 # REMOTE_USER:  SSH user on the remote server
 #--------------------------------------------------------------------------------
 DIR=$(realpath $(dirname $0))
-${DIR}/setup_roles.sh
 
 PLAYBOOK_DIR=$(realpath "$(dirname $0)/../plays")
 if [ $# -ge 2 ]; then
