@@ -5,58 +5,104 @@
 import easygopigo3
 import easysensors
 import paho.mqtt.client as mqtt
-import sys, time, ssl, threading
+import sys, time, ssl, threading, os, string
 from os.path import expanduser
+
+PI = easygopigo3.EasyGoPiGo3()
+
+#--------------------------------------------------------------------------------
+# Environment variables
+#--------------------------------------------------------------------------------
+# AWS IoT MQTT broker
+MQTT_HOST = os.environ['AWSIOT_MQTT_HOST']
+MQTT_PORT = os.environ['AWSIOT_MQTT_PORT']
+MQTT_TOPIC_COMMAND = os.environ['AWSIOT_MQTT_TOPIC_COMMAND']
+MQTT_TOPIC_REPORT = os.environ['AWSIOT_MQTT_TOPIC_REPORT']
+# TLS client certificate authetication
+TLS_DIR = os.environ['AWSIOT_TLS_DIR']
+TLS_CA_FILE = os.environ['AWSIOT_CA_FILE']
+TLS_KEY_FILE = os.environ['AWSIOT_KEY_FILE']
+TLS_CERT_FILE = os.environ['AWSIOT_CERT_FILE']
 
 #--------------------------------------------------------------------------------
 # GoPiGo
 #--------------------------------------------------------------------------------
-pi = easygopigo3.EasyGoPiGo3()
+def servo():
+    for i in range(1250, 1751):    # count from 1000 to 2000
+        PI.set_servo(PI.SERVO_1, i)
+        time.sleep(0.005)
+    for i in range(1250, 1751):    # count from 1000 to 2000
+        PI.set_servo(PI.SERVO_1, 3000-i)
+        time.sleep(0.005)
+
+    time.sleep(1)
+    PI.set_servo(PI.SERVO_1, 1500)
+
+
 def execute(command):
+    print("execute: command is [{0}]".format(command))
+    global PI
     commands = {
-        "forward"   : pi.forward,
-        "backward" : pi.backward,
-        "right"    : pi.right,
-        "left"     : pi.left,
-        "stop"     : pi.stop,
+        "f" : PI.forward,
+        "b" : PI.backward,
+        "r" : PI.right,
+        "l" : PI.left,
+        "s" : PI.stop,
     }
     try:
         commands[command]()
+        time.sleep(1)
+        PI.stop()
     except:
-        if (command == "exit"): sys.exit()
+        if command == "exit": sys.exit()
         print("Illegal command [" + command + "]")
 
-    time.sleep(3)
-    pi.stop()
 
-#--------------------------------------------------------------------------------
-# Locations
-#--------------------------------------------------------------------------------
-home = expanduser("~pi")
-TLS_DIR = home + "/.ssh"
+def set_client(client):
+    client.tls_set(
+        ca_certs=os.path.join(TLS_DIR, TLS_CA_FILE),
+        certfile=os.path.join(TLS_DIR, TLS_CERT_FILE),
+        keyfile=os.path.join(TLS_DIR, TLS_KEY_FILE)
+    )
+    client.tls_insecure_set(False)
 
-#--------------------------------------------------------------------------------
-# MQTT Broker (AWS IoT)
-#--------------------------------------------------------------------------------
-host="MQTT broker hostname/ip"
-port=8883
-ca_cert     = TLS_DIR + "/" + "ca.pem"
-client_cert = TLS_DIR + "/" + "e48b59a7a9-certificate.pem"
-client_key  = TLS_DIR + "/" + "e48b59a7a9-private.pem.key"
-tls={
-    'ca_certs':ca_cert, 
-    'certfile':client_cert, 
-    'keyfile' :client_key
-}
-topic_command="/gopigo/command"
-topic_report ="/gopigo/report"
+    client.on_disconnect = on_disconnect
+    client.on_connect = on_connect
+    client.on_message = on_message
+
+    setattr(get_client, "client", client)
+
+def get_client():
+    """MQTT resource accessor
+
+    Returns:
+        MQTT client
+    """
+    if not hasattr(get_client, "client"):
+        #--------------------------------------------------------------------------------
+        # MQTT Broker (AWS IoT)
+        #--------------------------------------------------------------------------------
+        client = mqtt.Client(
+            client_id="GoPiGo3",
+            clean_session=True
+        )
+        client.connected_flag=False
+
+        #--------------------------------------------------------------------------------
+        # The connected_flag is to test the connection and set to True by the on_connect.
+        # Set to False by the on_disconnect callback function.
+        # Create the flag as part of the Client Class so that available in each get_client().
+        #--------------------------------------------------------------------------------
+        set_client(client)
+
+    return getattr(get_client, "client")
 
 #--------------------------------------------------------------------------------
 # Callbacks
 #--------------------------------------------------------------------------------
 # The callback for when the client receives a CONNACK response from the server.
 def on_connect(client, userdata, flags, rc):
-    print("Connected with result code "+str(rc))
+    print("on_connect: result code "+str(rc))
     #--------------------------------------------------------------------------------
     # To ensure any messages published while disconnected will be delivered once
     # the connection is restored.
@@ -66,90 +112,85 @@ def on_connect(client, userdata, flags, rc):
     # Subscribing in on_connect() means that if we lose the connection and
     # reconnect then subscriptions will be renewed.
     #--------------------------------------------------------------------------------
-    print("subscribing ")
-    #client.subscribe(topic_command)
-    client.subscribe(topic_command, qos=1)
-    # $SYS/# cause the program to stop. Why?
-    #client.subscribe("$SYS/#")
+    print("subscribe to topic")
+    #get_client().subscribe(MQTT_TOPIC_COMMAND)
+    client.subscribe(MQTT_TOPIC_COMMAND, qos=1)
     client.connected_flag=True
+    set_client(client)
+
+    print("verify connect flag [{0}]".format(str(get_client().connected_flag)))
+    if get_client().connected_flag is not True:
+        print("connected flag not set!!!")
 
  
 def on_disconnect(client, userdata, flags, rc=0):
-    if client.connected_flag == True:
-        print("DisConnected: result code [" + str(rc) + "[ client_id [" + "]")
-        client.connected_flag = False
+    print("on_disconnect: result code [" + str(rc) + "[ client_id [" + "]")
+    set_client(client)
+    if get_client().connected_flag is True:
+        get_client().connected_flag = False
     else:
-        print("on_disconnet called while client.connected_flag == False")
+        print("on_disconnect called while get_client().connected_flag == False")
 
 def on_message(client, userdata, msg):
     print(msg.topic+" "+str(msg.payload))
     execute(str(msg.payload))
 
-def connect(client, host, port):
+def connect():
+    global MQTT_HOST
+    global MQTT_PORT
+
     print("connecting")
     try:
-        client.connect(
-            host=host,
-            port=port,
+        get_client().connect(
+            host=MQTT_HOST,
+            port=MQTT_PORT,
             keepalive=60,
             bind_address=""
         )
     except:
         print("connection failed. Will retry during the main loop...")
 
-#--------------------------------------------------------------------------------
-# The connected_flag is to test the connection and set to True by the on_connect.
-# Set to False by the on_disconnect callback function.
-# Create the flag as part of the Client Class so that available in each client.
-#--------------------------------------------------------------------------------
-mqtt.Client.connected_flag=False
-client = mqtt.Client(
-    client_id="GoPiGo3",
-    clean_session=True
-)
-client.on_disconnect = on_disconnect
-client.on_connect = on_connect
-client.on_message = on_message
-client.tls_set(
-    ca_certs=ca_cert,
-    certfile=client_cert,
-    keyfile=client_key
-)
-client.tls_insecure_set(True)
+def main():
+    #--------------------------------------------------------------------------------
+    # Connect before loop to avoid issues.
+    #--------------------------------------------------------------------------------
+    connect()
 
-#--------------------------------------------------------------------------------
-# Connect before loop to avoid issues.
-#--------------------------------------------------------------------------------
-connect(client, host, port)
+    #--------------------------------------------------------------------------------
+    # Start loop to process received messages
+    # There is a time delay between the connection creation and the callback trigger.
+    # Important to wait until the connection has been established.
+    # Check AFTER start loop to make sure on_connect gets called.
+    #--------------------------------------------------------------------------------
+    print("client connected flag before loop_start is " + str(get_client().connected_flag))
+    print("waiting for the connection to be established...")
+    get_client().loop_forever()
+    """
+    get_client().loop_start()
+    while get_client().connected_flag is False:
+        time.sleep(3)
+        print("Still waiting to connect...")
+        #connect()
 
-#--------------------------------------------------------------------------------
-# Start loop to process received messages
-# There is a time delay between the connection creation and the callback trigger.
-# Important to wait until the connection has been established.
-# Check AFTER start loop to make sure on_connect gets called.
-#--------------------------------------------------------------------------------
-print("client connected flag before loop_start is " + str(client.connected_flag))
-client.loop_start()
-while not client.connected_flag:
-    print("wait for connection to be established...")
-    time.sleep(1)
-    if not client.connected_flag:
-        print("Disconnected. Try to connect")
-        connect(client, host, port) 
+    print("Connection established")
+    #--------------------------------------------------------------------------------
+    # Reconnect when disconnected
+    #--------------------------------------------------------------------------------
+    try:
+        while True:
+            print("client connected flag in loop is " + str(get_client().connected_flag))
+            print("sleeping")
+            time.sleep(1)
+            if get_client().connected_flag is False:
+                print("Disconnected. Try to reconnect...")
+                get_client().reconnect()
 
-#--------------------------------------------------------------------------------
-# Reconnect when disconnected
-#--------------------------------------------------------------------------------
-try:
-    while True:
-        print("client connected flag in loop is " + str(client.connected_flag))
-        print("sleeping")
-        time.sleep(1)
-        if not client.connected_flag:
-            print("Disconnected. Try to reconnect")
-            client.reconnect()
- 
-except KeyboardInterrupt:
-    print "exiting"
-    client.disconnect()
-    client.loop_stop()
+    except KeyboardInterrupt:
+        print "exiting"
+        get_client().disconnect()
+        get_client().loop_stop()
+    """
+
+
+if __name__ == '__main__':
+    main()
