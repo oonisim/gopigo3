@@ -1,11 +1,20 @@
 # Overview
-Control GoPiGo3/RaspberryPi 3 robot via AWS IoT.
-<img src="./images/gopigo3.png" width="750">
+Control a GoPiGo3/RaspberryPi 3 robot via AWS IoT. 
 
-The device [GoPiGo3](https://www.dexterindustries.com/gopigo3/) communicates with the controller via AWS IoT Core using the MQTT protocol to control the movements.
+### GoPiGo3
+[GoPiGo3](https://www.dexterindustries.com/gopigo3/) is a car robot from Dexter that provides the GoPiGo 3 library and the documentation.
 
+* [Dexter Industries GoPiGo3 Documentation!](https://gopigo3.readthedocs.io/en/master/)
+* [Github GoPiGo3](https://github.com/DexterInd/GoPiGo3)
+
+<img src="./images/gopigo3.png">
+
+### Architecture
+
+The device communicates with the controller via AWS IoT Core using the MQTT protocol to control the movements.
 <img src="./images/AWS_IoT.png">
 
+### Object detection
 The device streams the video from the camera via HTTP (Currently the stream is not via MQTT) using [Motion](https://motion-project.github.io/). Using [Yolo v3](https://pjreddie.com/media/files/papers/YOLOv3.pdf), object detection can be run on the controller side.
 
 * [How to implement a YOLO (v3) object detector from scratch in PyTorch: Part 1](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/)
