@@ -1,9 +1,32 @@
+# Overview
+Control GoPiGo3/RaspberryPi 3 robot via AWS IoT.
+<img src="./images/gopigo3.png" width="750">
 
-<img src="./images/AWS_IoT.png" height="750" width="750">
+The device [GoPiGo3](https://www.dexterindustries.com/gopigo3/) communicates with the controller via AWS IoT Core using the MQTT protocol to control the movements.
 
-<img src="./images/gopigo.png" height="750" width="750">
+<img src="./images/AWS_IoT.png">
 
-<img src="./images/Yolo.png" height="750" width="750">
+The device streams the video from the camera via HTTP (Currently the stream is not via MQTT) using [Motion](https://motion-project.github.io/). Using [Yolo v3](https://pjreddie.com/media/files/papers/YOLOv3.pdf), object detection can be run on the controller side.
+
+* [How to implement a YOLO (v3) object detector from scratch in PyTorch: Part 1](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/)
+* [Github YOLO_v3_tutorial_from_scratch](https://github.com/ayooshkathuria/YOLO_v3_tutorial_from_scratch)
+
+```
+$ python3 video.py --video http://172.16.11.245:8081/
+Loading network.....
+Network successfully loaded
+video.py:117: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  output = model(Variable(img, volatile = True), CUDA)
+/usr/local/lib/python3.6/dist-packages/torch/nn/modules/upsampling.py:129: UserWarning: nn.Upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.{} is deprecated. Use nn.functional.interpolate instead.".format(self.name))
+0.13156437873840332
+FPS of the video is  7.60
+...
+```
+
+The detection looks like in the snapshot.
+
+<img src="./images/Yolo.png" width="500">
 
 # AWS IoT Configuration
 
