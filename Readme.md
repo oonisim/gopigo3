@@ -1,7 +1,7 @@
 # Overview
 Control a GoPiGo3/RaspberryPi 3 robot via AWS IoT. 
 
-### GoPiGo3
+## GoPiGo3
 [GoPiGo3](https://www.dexterindustries.com/gopigo3/) is a car robot from Dexter that provides the GoPiGo 3 library and the documentation.
 
 * [Dexter Industries GoPiGo3 Documentation!](https://gopigo3.readthedocs.io/en/master/)
@@ -9,12 +9,12 @@ Control a GoPiGo3/RaspberryPi 3 robot via AWS IoT.
 
 <img src="./images/gopigo3.png">
 
-### Architecture
+## Architecture
 
-The device communicates with the controller via AWS IoT Core using the MQTT protocol to control the movements.
+The device communicates with the controller via AWS IoT Core using the MQTT protocol.
 <img src="./images/AWS_IoT.png">
 
-### Object detection
+## Object detection
 The device streams the video from the camera via HTTP (Currently the stream is not via MQTT) using [Motion](https://motion-project.github.io/). Using [Yolo v3](https://pjreddie.com/media/files/papers/YOLOv3.pdf), object detection can be run on the controller side.
 
 * [How to implement a YOLO (v3) object detector from scratch in PyTorch: Part 1](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/)
@@ -35,11 +35,13 @@ FPS of the video is  7.60
 
 The detection looks like in the snapshot.
 
-<img src="./images/Yolo.png" width="500">
+<img src="./images/Yolo.png" width="750">
 
-# AWS IoT Configuration
+---
 
-## IoT PKI setup
+# Setting up AWS IoT 
+
+## PKI
 
 * [AWS IoT Developer Guide - Configure Your Device](https://docs.aws.amazon.com/iot/latest/developerguide/configure-iot.html)
 > All devices must have a device certificate, private key, and root CA certificate installed in order to communicate with AWS IoT. Consult your device's documentation to connect to it and copy your device certificate, private key, and root CA certificate onto your device.
@@ -87,11 +89,11 @@ resource "aws_iot_certificate" "this" {
 #### Download the client certificate
 
 From the IoT Console, Manage > Things > Security and select Download from Actions.
-<img src="./images/AWS_IoT_download_cliient_cert.png" height="750" width="750">
+<img src="./images/AWS_IoT_download_cliient_cert.png">
 
 
 
-## AWS IoT Thing setup
+## AWS IoT Thing
 
 #### Register a Thing
 Register your device in the Amazon Console. Go to IoT menu > Manage > Things.
@@ -100,7 +102,7 @@ Register your device in the Amazon Console. Go to IoT menu > Manage > Things.
 Create a policy in AWS IoT Console Menu > Secure > Policies. Attach the policy in AWS Iot Console Menu  > Manage > Things and select the Thing.
 
 
-## AWS IoT Endpoint setup
+## AWS IoT Endpoint
 
 Each account has a specific IoT endpoint with which the IoT device(s) interact with.
 
@@ -122,7 +124,7 @@ $ openssl s_client -connect $ENDPOINT:8443 -CAfile ./ca.pem -cert e48b59a7a9-cer
 
 Refer to the appendex A1 for the output example.
 
-## Device setup
+## Device
 
 The device administrator needs to setup the PKI with the files in the device.
 
@@ -157,8 +159,11 @@ Install the MQTT client runtime.
 
 ---
 
-# Automated setup
-## AWS IoT setup
+# Automation
+
+Setup the AWS IoT and device have been automated with Ansible playbooks and Terraform scripts.
+
+## AWS IoT
 Terraform scripts to setup AWS IoT are located in the directory.
 ```dtd
 scripts/terraform
