@@ -4,6 +4,14 @@
 data "aws_iot_endpoint" "this" {}
 
 #--------------------------------------------------------------------------------
+# Sign CSR
+# [Overview]
+# To verify the device that accesses AWS IoT is legitimate, a client certificate
+# signed by AWS IoT is required.
+#
+# [Prerequisite]
+# CSR file "iot.csr" in scripts/terraform/aws/iot/pki directory.
+#
 # [How do I create self-signed device certificates to authenticate my devices with AWS IoT?]
 # https://aws.amazon.com/premiumsupport/knowledge-center/iot-self-signed-certificates/
 #--------------------------------------------------------------------------------
